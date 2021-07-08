@@ -5,7 +5,9 @@ import (
 	"strings"
 )
 
-func chatWithFilter(chat string, filter func(string) string) {
+type Filter func(string) string
+
+func chatWithFilter(chat string, filter Filter) {
 	chatFiltered := filter(chat)
 	fmt.Println("Chat: ", chatFiltered)
 }
