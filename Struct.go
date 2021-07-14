@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type Customer struct {
+type Customer struct { //like class object di java
 	Name, Address string
 	Age           int
 }
